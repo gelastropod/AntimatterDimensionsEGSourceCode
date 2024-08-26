@@ -412,6 +412,11 @@ Currency.perkPoints = new class extends NumberCurrency {
   set value(value) { player.reality.perkPoints = value; }
 }();
 
+Currency.doomedUniverses = new class extends DecimalCurrency {
+  get value() { return player.doomedUniverses; }
+  set value(value) { player.doomedUniverses = value; }
+}();
+
 Currency.relicShards = new class extends NumberCurrency {
   get value() { return player.celestials.effarig.relicShards; }
   set value(value) { player.celestials.effarig.relicShards = value; }

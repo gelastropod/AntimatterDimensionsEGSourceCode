@@ -369,6 +369,7 @@ window.player = {
   timeShards: DC.D0,
   totalTickGained: 0,
   totalTickBought: 0,
+  doomedUniverses: DC.D0,
   replicanti: {
     unl: false,
     amount: DC.D0,

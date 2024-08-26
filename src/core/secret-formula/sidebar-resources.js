@@ -1,3 +1,5 @@
+import { MachineHandler } from "../machines";
+
 export const sidebarResources = [
   // Note: ID 0 is interpreted in the Vue component as "the largest unlocked ID" - do not use ID 0
   {
@@ -131,4 +133,12 @@ export const sidebarResources = [
     formatValue: x => format(x, 2),
     formatClass: "o-sidebar-currency--pelle",
   },
+  {
+    id: 17,
+    optionName: "Doomed Universes",
+    isAvailable: () => PlayerProgress.hasFullCompletion(),
+    value: () => Currency.doomedUniverses,
+    formatValue: x => format(x, 2),
+    formatClass: "o-sidebar-currency--pelle",
+  }
 ];
